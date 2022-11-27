@@ -29,7 +29,7 @@ int main(int argc, char* argv[])
 	argMap [ArgEnum::branch] =  "master";
 	argMap [ArgEnum::remote] =  "origin";
 	
-	argc -= 1;
+	
 	for (int i = 0 ; i < argc ; i += 1)
 	{
 		if (i != 0 && i < argMap.size ())
