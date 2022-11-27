@@ -5,6 +5,10 @@ set(CMAKE_CXX_COMPILER D:/System/msys2/mingw64/bin/clang++)
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+# Link Boost Asio library
+
+
+
 add_executable(
   opengl_startup
   ./src/index.cpp
