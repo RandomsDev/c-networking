@@ -40,10 +40,10 @@ target_include_directories(networking_examples PRIVATE "./asio/include")
 ### Run Program
 
 ```command
-	> git clone https://github.com/RandomsDev/c-networking
-	> cd c-networking
-	> g++ makeit.cpp -o makeit
-	> ./makeit
+> git clone https://github.com/RandomsDev/c-networking
+> cd c-networking
+> g++ makeit.cpp -o makeit
+> ./makeit
 ```
 
 #
