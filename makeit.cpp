@@ -7,13 +7,14 @@
 
 int main (int argc, char* argv[])
 {
-    if (argc <= 1) 
+    std::string projectName = "networking_examples";
+    if (argc > 1) 
     {
         system ("echo Project-Name Required");
+        projectName = std::string(argv [1]);
         return EXIT_FAILURE;
     }
 
-    char* projectName = argv [1];
     std::string command = "cd build && cmake .. && cmake --build . && cd debug && cls && " 
         + std::string(projectName) + ".exe";
     system (command.c_str());
