@@ -35,7 +35,7 @@ int main(int argc, char* argv[])
 	}
 
 	std::string command = "git add . && git commit -m " + argMap [ArgEnum::commit] +
-	" && git push " + argMap [ArgEnum::remote] + " " +argMap [ArgEnum::remote];
+	" && git push " + argMap [ArgEnum::remote] + " " +argMap [ArgEnum::branch];
 	
 	std::cout << command << "\n";
 	system (command.c_str ()); 
