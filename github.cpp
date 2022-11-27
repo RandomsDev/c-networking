@@ -1,6 +1,6 @@
 #include <cstdlib>
 #include <map>
-#include <iostream>
+#include <string>
 
 #define NEED_HELP 200
 
@@ -37,7 +37,6 @@ int main(int argc, char* argv[])
 	std::string command = "git add . && git commit -m " + argMap [ArgEnum::commit] +
 	" && git push " + argMap [ArgEnum::remote] + " " +argMap [ArgEnum::branch];
 	
-	std::cout << command << "\n";
 	system (command.c_str ()); 
 	return EXIT_SUCCESS;
 }
