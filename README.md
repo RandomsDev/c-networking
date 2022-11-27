@@ -1,6 +1,6 @@
 <h1 align='center'> c++ networking </h1>
 
-# Get started
+### Get started
 
 <h3 align='center'>Setup c++ compiler</h3>
 
