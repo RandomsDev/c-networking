@@ -30,11 +30,12 @@ int main(int argc, char* argv[])
 	argMap [ArgEnum::remote] =  "origin";
 	
 	argc -= 1;
-	for (int i = (int)ArgEnum::commit; i != (int)ArgEnum::remote; i += 1)
+	for (int i = 0 ; i < argc ; i += 1)
 	{
-		if (argc > i) argMap [static_cast <ArgEnum> (i)] = std::string(argv [i]);
+		if (i != 0 && i < argMap.size ())
+			argMap [static_cast <ArgEnum> (i)] = std::string(argv [i]);
 	}
-
+	
 	std::string command = "git add . && git commit -m " + argMap [ArgEnum::commit] +
 	" && git push " + argMap [ArgEnum::remote] + " " +argMap [ArgEnum::branch];
 	
