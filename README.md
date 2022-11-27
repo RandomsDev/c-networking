@@ -1,7 +1,4 @@
-<h2 align='center'> c++ networking </h2>
-
-
-<br>
+<h1 align='center'> c++ networking </h1>
 
 # Get started
 
