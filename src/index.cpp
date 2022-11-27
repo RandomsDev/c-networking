@@ -5,7 +5,7 @@
 int main ()
 {
     std::cout << "C++ Networking Server \n";
-
     std::cin.get ();
     return EXIT_SUCCESS;
 }
+
