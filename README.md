@@ -13,6 +13,7 @@
 #  
 <!-- https://sourceforge.net/projects/asio/ -->
 
+> <a href='https://cmake.org/download/'>Download Cmake</a>
 > Version:`boost_asio 1.24.0 stable`
 <a align='center' href='https://sourceforge.net/projects/asio/'>Download Asio</a>
 
@@ -30,6 +31,19 @@ add_executable(
   ./src/index.cpp
 )
 
+target_include_directories(networking_examples PRIVATE "./asio/include")
+
+```
+
+
+
+### Run Program
+
+```command
+	> git clone https://github.com/RandomsDev/c-networking
+	> cd c-networking
+	> g++ makeit.cpp -o makeit
+	> ./makeit
 ```
 
 #
