@@ -11,12 +11,13 @@ enum class ArgEnum
 
 int main(int argc, char* argv[])
 {
+	std::cout << argv [1] << " \n";
 	if (argc > 1 && argv [1] == "--help")
 	{
 		system ("echo github [commit-message=\"commit via GitHub-CLI\"] [branch=\"master\"] [remote=\"origin\"]");
 		return EXIT_SUCCESS;
 	}
-	
+
 	std::map <ArgEnum, std::string> argMap;
 	
 	argMap [ArgEnum::commit] =  "commit via GitHub-CLI";
