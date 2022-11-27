@@ -42,3 +42,5 @@ int main(int argc, char* argv[])
 	system (command.c_str ()); 
 	return EXIT_SUCCESS;
 }
+
+// TEST 1: PASSED
